@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
@@ -14,3 +14,14 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+const providers = []
+
+export class PharmacySharedModule{
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: AppModule,
+      providers: providers
+    }
+  }
+}
