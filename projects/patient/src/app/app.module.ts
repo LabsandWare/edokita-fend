@@ -18,6 +18,9 @@ export class AppModule { }
 
 const providers = []
 
+@NgModule({
+  providers: providers
+})
 export class PatientSharedModule{
   static forRoot(): ModuleWithProviders {
     return {

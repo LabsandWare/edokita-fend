@@ -11,14 +11,11 @@ import { LabSharedModule } from 'projects/lab/src/app/app.module';
 import { PatientSharedModule } from 'projects/patient/src/app/app.module';
 import { PharmacySharedModule } from 'projects/pharmacy/src/app/app.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { LoginComponent } from './authentication/login/login.component';
-import { SignupComponent } from './authentication/signup/signup.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
-    SignupComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,

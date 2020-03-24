@@ -8,11 +8,10 @@ import { LabSharedModule } from 'projects/lab/src/app/app.module';
 import { PatientSharedModule } from 'projects/patient/src/app/app.module';
 import { PharmacySharedModule } from 'projects/pharmacy/src/app/app.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './authentication/login/login.component';
 
 
 const routes: Routes = [{
-  path: '', component:LoginComponent,
+  path: '', component:AppComponent,
   children:[
     {path: 'admin', loadChildren: () => import('projects/admin/src/app/app.module').then(m => m.AdminSharedModule)},
     {path: 'doctor', loadChildren: () => import('projects/doctor/src/app/app.module').then(m => m.DoctorSharedModule)},
