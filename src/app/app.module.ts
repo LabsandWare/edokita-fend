@@ -26,7 +26,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     LabSharedModule.forRoot(),
     PatientSharedModule.forRoot(),
     PharmacySharedModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
