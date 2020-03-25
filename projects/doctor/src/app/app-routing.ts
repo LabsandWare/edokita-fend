@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 
 import { DoctorLayoutComponent } from './layouts/doctor-layout/doctor-layout.component';
 
-export const DocRoutes: Routes = [
+export const DoctorRoutes: Routes = [
 	{
 		path: '',
 		redirectTo: 'dashboard',

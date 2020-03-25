@@ -9,7 +9,7 @@ import { NavbarModule } from './shared/navbar/navbar.module';
 import { SidebarModule } from './sidebar/sidebar.module';
 
 import { AppComponent } from './app.component';
-import { DocRoutes } from './app-routing';
+import { DoctorRoutes } from './app-routing';
 
 import { DoctorLayoutComponent } from './layouts/doctor-layout/doctor-layout.component';
 
@@ -21,7 +21,7 @@ import { DoctorLayoutComponent } from './layouts/doctor-layout/doctor-layout.com
   imports: [
     BrowserModule,
     RouterModule,
-    RouterModule.forRoot(DocRoutes),
+    RouterModule.forRoot(DoctorRoutes),
     FormsModule,
     FooterModule,
     FixedPluginModule,
