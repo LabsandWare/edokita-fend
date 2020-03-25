@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ModuleWithProviders} from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { FormsModule }   from '@angular/forms';
 
 import { FooterModule } from './shared/footer/footer.module';
@@ -8,7 +9,8 @@ import { NavbarModule } from './shared/navbar/navbar.module';
 import { SidebarModule } from './sidebar/sidebar.module';
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
+import { DoctorRoutes } from './app-routing';
+
 import { DoctorLayoutComponent } from './layouts/doctor-layout/doctor-layout.component';
 
 @NgModule({
@@ -18,7 +20,8 @@ import { DoctorLayoutComponent } from './layouts/doctor-layout/doctor-layout.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    RouterModule,
+    RouterModule.forRoot(DoctorRoutes),
     FormsModule,
     FooterModule,
     FixedPluginModule,
@@ -32,9 +35,11 @@ export class AppModule { }
 
 const providers = []
 
+
 @NgModule({
   providers: providers
 })
+
 export class DoctorSharedModule{
   static forRoot(): ModuleWithProviders {
     return {

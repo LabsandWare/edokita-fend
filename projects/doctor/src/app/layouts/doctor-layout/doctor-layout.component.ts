@@ -5,9 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './doctor-layout.component.html',
   styleUrls: ['./doctor-layout.component.css']
 })
-export class DoctorLayoutComponent implements OnInit {
 
-  constructor() { }
+export class DoctorLayoutComponent implements OnInit {
 
   ngOnInit(): void {
   }
