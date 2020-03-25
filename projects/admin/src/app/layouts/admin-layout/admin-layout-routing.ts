@@ -4,6 +4,6 @@ import { DashboardComponent } from '../pages/dashboard/dashboard.component';
 import { UserComponent } from '../pages/user/user.component';
 
 export const AdminLayoutRoutes: Routes = [
-  { path: 'dashboard',      component: DashboardComponent },
+  { path: '',      component: DashboardComponent },
   { path: 'user',           component: UserComponent }
 ];
