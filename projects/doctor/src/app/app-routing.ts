@@ -5,12 +5,12 @@ import { DoctorLayoutComponent } from './layouts/doctor-layout/doctor-layout.com
 
 export const DoctorRoutes: Routes = [
 	{
-		path: '',
+		path: 'doctor',
 		redirectTo: 'dashboard',
 		pathMatch: 'full',
 	},
 	{
-		path: '',
+		path: 'doctor',
 		component: DoctorLayoutComponent,
 		children: [
 			{
