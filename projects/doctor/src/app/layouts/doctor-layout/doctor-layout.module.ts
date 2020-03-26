@@ -15,7 +15,6 @@ import { AddScheduleComponent } from '../pages/add-schedule/add-schedule.compone
 import { EditScheduleComponent } from '../pages/edit-schedule/edit-schedulecomponent';
 import { SmsComponent } from '../pages/sms/sms.component';
 import { EmailComponent } from '../pages/email/email.component';
-// import { UserComponent } from '../pages/user/user.component';
 
 
 
