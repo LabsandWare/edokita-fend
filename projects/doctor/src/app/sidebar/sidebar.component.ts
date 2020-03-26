@@ -10,13 +10,17 @@ export interface RouteInfo {
 
 export const ROUTES: RouteInfo[] = [
     { path: '/dashboard',     title: 'Dashboard',         icon:'nc-bank',       class: '' },
-    { path: '/email',         title: 'Send mail',             icon:'nc-diamond',    class: '' },
-    // { path: '/maps',          title: 'Maps',              icon:'nc-pin-3',      class: '' },
-    // { path: '/notifications', title: 'Notifications',     icon:'nc-bell-55',    class: '' },
-    // { path: '/user',          title: 'User Profile',      icon:'nc-single-02',  class: '' },
-    // { path: '/table',         title: 'Table List',        icon:'nc-tile-56',    class: '' },
-    // { path: '/typography',    title: 'Typography',        icon:'nc-caps-small', class: '' },
-    // { path: '/upgrade',       title: 'Upgrade to PRO',    icon:'nc-spaceship',  class: 'active-pro' },
+    { path: '/update-profile',         title: 'Update Profile',             icon:'nc-diamond',    class: '' },
+    { path: '/patient-history',          title: 'Patient History',              icon:'nc-globe',      class: '' },
+    { path: '/consultation-note', title: 'Consultation Note',     icon:'nc-bell-55',    class: '' },
+    { path: '/view',          title: 'Manage Appointment',      icon:'nc-single-02',  class: '' },
+    { path: '/view',         title: 'View',        icon:'nc-tile-56',    class: '' },
+    { path: '/add-schedule',    title: 'Add Schedule',        icon:'nc-caps-small', class: '' },
+    { path: '/edit-schedule',       title: 'Edit Schedule',    icon:'nc-spaceship',  class: 'active-pro' },
+    { path: '/sms',       title: 'Follow up Patient',    icon:'nc-spaceship',  class: 'active-pro' },
+    { path: '/sms',       title: 'Sms',    icon:'nc-spaceship',  class: 'active-pro' },
+    { path: '/email',       title: 'Email',    icon:'nc-spaceship',  class: 'active-pro' },
+
 ];
 
 @Component({

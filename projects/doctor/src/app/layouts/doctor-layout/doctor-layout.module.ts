@@ -7,14 +7,31 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DoctorLayoutRoutes } from './doctor-layout-routing';
 
 import { DashboardComponent } from '../pages/dashboard/dashboard.component';
-import { UserComponent } from '../pages/user/user.component';
+import { UpdateProfileComponent } from '../pages/update-profile/update-profile.component';
+import { PatientHistoryComponent } from '../pages/patient-history/patient-history.component';
+import { ConsultationNoteComponent } from '../pages/consultation-note/consultation-note.component';
+import { ViewComponent } from '../pages/view/view.component';
+import { AddScheduleComponent } from '../pages/add-schedule/add-schedule.component';
+import { EditScheduleComponent } from '../pages/edit-schedule/edit-schedulecomponent';
+import { SmsComponent } from '../pages/sms/sms.component';
+import { EmailComponent } from '../pages/email/email.component';
+// import { UserComponent } from '../pages/user/user.component';
 
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    UserComponent
+    UpdateProfileComponent,
+    PatientHistoryComponent,
+    ConsultationNoteComponent,
+    ViewComponent,
+    AddScheduleComponent,
+    EditScheduleComponent,
+    SmsComponent,
+    EmailComponent
+
+    
   ],
   imports: [
     CommonModule,

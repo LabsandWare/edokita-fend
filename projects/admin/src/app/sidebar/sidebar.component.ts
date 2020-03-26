@@ -10,12 +10,23 @@ export interface RouteInfo {
 
 export const ROUTES: RouteInfo[] = [
     { path: '/dashboard',     title: 'Dashboard',         icon:'nc-bank',       class: '' },
-    { path: '/email',         title: 'Send mail',             icon:'nc-diamond',    class: '' },
     { path: '/provider-checker',   title: 'Provider Checker',              icon:'nc-pin-3',      class: '' },
-    // { path: '/notifications', title: 'Notifications',     icon:'nc-bell-55',    class: '' },
-    // { path: '/user',          title: 'User Profile',      icon:'nc-single-02',  class: '' },
-    // { path: '/table',         title: 'Table List',        icon:'nc-tile-56',    class: '' },
-    // { path: '/typography',    title: 'Typography',        icon:'nc-caps-small', class: '' },
+    { path: '/patient-list',   title: 'Account Management',              icon:'nc-pin-3',      class: '' },
+    { path: '/patient-list',         title: 'Patient List',             icon:'nc-diamond',    class: '' },
+    { path: '/provider-list', title: 'Provider List',     icon:'nc-bell-55',    class: '' },
+    { path: '/hospital-list',          title: 'Hospital List',      icon:'nc-single-02',  class: '' },
+    { path: '/pharmacy-list',         title: 'Pharmacy List',        icon:'nc-tile-56',    class: '' },
+    { path: '/lab-list',    title: 'Laboratory List',        icon:'nc-caps-small', class: '' },
+    { path: '/create',   title: 'Subscription Plan',              icon:'nc-pin-3',      class: '' },
+    { path: '/create',   title: 'Create',              icon:'nc-pin-3',      class: '' },
+    { path: '/edit',   title: 'Edit',              icon:'nc-pin-3',      class: '' },
+    { path: '/sms',   title: 'Messaging',              icon:'nc-pin-3',      class: '' },
+    { path: '/sms',   title: 'Sms',              icon:'nc-pin-3',      class: '' },
+    { path: '/email',   title: 'Email',              icon:'nc-pin-3',      class: '' },
+    { path: '/view',   title: 'HMO',              icon:'nc-pin-3',      class: '' },
+    { path: '/view',   title: 'View',              icon:'nc-pin-3',      class: '' },
+    { path: '/hmo-create',   title: 'Create',              icon:'nc-pin-3',      class: '' },
+
     // { path: '/upgrade',       title: 'Upgrade to PRO',    icon:'nc-spaceship',  class: 'active-pro' },
 ];
 //
