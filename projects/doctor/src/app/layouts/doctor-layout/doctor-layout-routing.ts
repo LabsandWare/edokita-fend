@@ -11,7 +11,7 @@ import { SmsComponent } from '../pages/sms/sms.component';
 import { EmailComponent } from '../pages/email/email.component';
 
 export const DoctorLayoutRoutes: Routes = [
-  { path: '',      component: DashboardComponent },
+  { path: 'dashboard',      component: DashboardComponent },
   { path: 'update-profile', component: UpdateProfileComponent },
   { path: 'patient-history', component: PatientHistoryComponent },
   { path: 'consultation-note', component: ConsultationNoteComponent },

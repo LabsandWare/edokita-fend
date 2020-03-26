@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {
+    Component,
+    OnInit
+    
+  } from '@angular/core';
+  
 
 @Component({
     selector: 'user-cmp',
@@ -9,4 +14,5 @@ import { Component, OnInit } from '@angular/core';
 export class ViewComponent implements OnInit{
     ngOnInit(){
     }
+    
 }
