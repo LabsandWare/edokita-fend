@@ -6,7 +6,7 @@ import { DoctorLayoutComponent } from './layouts/doctor-layout/doctor-layout.com
 export const DoctorRoutes: Routes = [
 	{
 		path: 'doctor',
-		redirectTo: 'dashboard',
+		redirectTo: 'doctor/dashboard',
 		pathMatch: 'full',
 	},
 	{
