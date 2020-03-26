@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 
 import { DashboardComponent } from '../pages/dashboard/dashboard.component';
-// import { UserComponent } from '../pages/user/user.component';
 import { UpdateProfileComponent } from '../pages/update-profile/update-profile.component';
 import { PatientHistoryComponent } from '../pages/patient-history/patient-history.component';
 import { ConsultationNoteComponent } from '../pages/consultation-note/consultation-note.component';
