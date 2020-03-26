@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 
 import { DashboardComponent } from '../pages/dashboard/dashboard.component';
-// import { UserComponent } from '../pages/user/user.component';
 import { ProviderCheckerComponent } from '../pages/provider-checker/provider-checker.component';
 import { PatientListComponent } from '../pages/patient-list/patient-list.component';
 import { HospitalListComponent } from '../pages/hospital-list/hospital-list.component';
@@ -16,8 +15,7 @@ import { HmoCreateComponent } from '../pages/hmo-create/hmo-create.component';
 import { ProviderListComponent } from '../pages/provider-list/provider-list.component';
 
 export const AdminLayoutRoutes: Routes = [
-  { path: 'dashboard',      component: DashboardComponent },
-  // /{ path: 'user',           component: UserComponent },
+  { path: '/',      component: DashboardComponent },
   { path: 'provider-checker', component: ProviderCheckerComponent},
   { path: 'patient-list', component: PatientListComponent},
   { path: 'provider-list', component: ProviderListComponent},
