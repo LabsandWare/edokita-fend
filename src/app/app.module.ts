@@ -11,6 +11,9 @@ import { LabSharedModule } from 'projects/lab/src/app/app.module';
 import { PatientSharedModule } from 'projects/patient/src/app/app.module';
 import { PharmacySharedModule } from 'projects/pharmacy/src/app/app.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { FlatpickrModule } from 'angularx-flatpickr';
 
 
 @NgModule({
@@ -20,6 +23,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FlatpickrModule.forRoot(),
     AdminSharedModule.forRoot(),
     DoctorSharedModule.forRoot(),
     HospitalSharedModule.forRoot(),
@@ -27,6 +31,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     PatientSharedModule.forRoot(),
     PharmacySharedModule.forRoot(),
     ReactiveFormsModule,
+    CalendarModule.forRoot({ provide: DateAdapter, useFactory: adapterFactory }),
   ],
   providers: [],
   bootstrap: [AppComponent]
