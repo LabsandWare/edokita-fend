@@ -15,7 +15,7 @@ import { AddScheduleComponent } from '../pages/add-schedule/add-schedule.compone
 import { EditScheduleComponent } from '../pages/edit-schedule/edit-schedulecomponent';
 import { SmsComponent } from '../pages/sms/sms.component';
 import { EmailComponent } from '../pages/email/email.component';
-import { MatCheckboxModule} from '@angular/material'
+// import { MatCheckboxModule} from '@angular/material/checkbox';
 
  
 
@@ -36,7 +36,6 @@ import { MatCheckboxModule} from '@angular/material'
   imports: [
     CommonModule,
     FormsModule,
-    MatCheckboxModule,
     RouterModule.forChild(DoctorLayoutRoutes),
     NgbModule
   ],
