@@ -13,11 +13,11 @@ export const ROUTES: RouteInfo[] = [
     { path: '/update-profile',         title: 'Update Profile',             icon:'nc-diamond',    class: '' },
     { path: '/patient-history',          title: 'Patient History',              icon:'nc-globe',      class: '' },
     { path: '/consultation-note', title: 'Consultation Note',     icon:'nc-bell-55',    class: '' },
-    { path: '/view',          title: 'Manage Appointment',      icon:'nc-single-02',  class: '' },
+    { path: '/#',          title: 'Manage Appointment',      icon:'nc-single-02',  class: 'dim' },
     { path: '/view',         title: 'View',        icon:'nc-tile-56',    class: '' },
     { path: '/add-schedule',    title: 'Add Schedule',        icon:'nc-caps-small', class: '' },
     { path: '/edit-schedule',       title: 'Edit Schedule',    icon:'nc-spaceship',  class: 'active-pro' },
-    { path: '/sms',       title: 'Follow up Patient',    icon:'nc-spaceship',  class: 'active-pro' },
+    { path: '/#',       title: 'Follow up Patient',    icon:'nc-spaceship',  class: 'dim' },
     { path: '/sms',       title: 'Sms',    icon:'nc-spaceship',  class: 'active-pro' },
     { path: '/email',       title: 'Email',    icon:'nc-spaceship',  class: 'active-pro' },
 

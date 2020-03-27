@@ -10,10 +10,11 @@ import { HospitalSharedModule } from 'projects/hospital/src/app/app.module';
 import { LabSharedModule } from 'projects/lab/src/app/app.module';
 import { PatientSharedModule } from 'projects/patient/src/app/app.module';
 import { PharmacySharedModule } from 'projects/pharmacy/src/app/app.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { FlatpickrModule } from 'angularx-flatpickr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -32,6 +33,8 @@ import { FlatpickrModule } from 'angularx-flatpickr';
     PharmacySharedModule.forRoot(),
     ReactiveFormsModule,
     CalendarModule.forRoot({ provide: DateAdapter, useFactory: adapterFactory }),
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

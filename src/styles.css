@@ -1,1 +1,127 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import '~ngx-toastr/toastr';
+/* .container {
+    width: 82vw;
+} */
+
+body { 
+    background-color: #e5e5e5 !important;
+    font-size: 100%;
+}
+ 
+.ff-nunito {
+  font-family: 'Nunito', sans-serif !important;
+}
+
+
+.ff {
+  font-family: Open sans!important;
+}
+.fn {
+  font-family: 'PlayfairDisplay'!important;
+  /* font-stretch: condensed; */
+}
+.fs-6 {
+  font-size: 0.375em;
+}
+.fs-7 {
+  font-size: 0.438em;
+}
+
+.fs-10 {
+  font-size: 0.543em;  
+}
+.fs-11 {
+  font-size: 0.688em;
+}
+
+.fs-12 {
+  font-size: 0.750em;
+}
+.fs-13{
+  font-size: 0.800em;
+}
+.fs-14 {
+  font-size: 0.875em;
+}
+
+.fs-15 {
+  font-size: 0.938em;
+}
+.fs-16{
+  font-size: 1.000em;
+}
+.fs-17 {
+  font-weight: 1.106em;
+}
+
+.fs-18 {
+  font-size: 1.125em!important;
+}
+
+.fs-20 {
+  font-size: 1.250em !important;
+}
+
+.fs-21 {
+  font-size: 1.313em !important;
+}
+
+.fs-24 {
+  font-size: 1.500em !important;
+}
+
+.fs-26 {
+  font-size: 1.625em !important;
+}
+
+.fs-27 {
+  font-size: 1.688em !important;
+}
+
+.fs-31 {
+  font-size: 1.938em !important;
+}
+
+.fs-32 {
+  font-size: 2.000em !important;
+}
+
+.fs-36 {
+  font-size: 2.250em !important;
+}
+
+.fs-42 {
+  font-size: 2.625em !important;
+}
+.fs-44 {
+  font-size: 2.763em !important;
+}
+
+.fs-88 {
+  font-size: 4.200em;
+}
+
+.bold {
+  font-weight: bold!important;
+}
+
+.fw-600 {
+font-weight: 600;
+}
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+.myapp-no-padding-dialog .mat-dialog-container {
+  padding: 0;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
