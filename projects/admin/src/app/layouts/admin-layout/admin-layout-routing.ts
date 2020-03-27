@@ -15,7 +15,7 @@ import { HmoCreateComponent } from '../pages/hmo-create/hmo-create.component';
 import { ProviderListComponent } from '../pages/provider-list/provider-list.component';
 
 export const AdminLayoutRoutes: Routes = [
-  { path: '/',      component: DashboardComponent },
+  { path: 'dashboard',      component: DashboardComponent },
   { path: 'provider-checker', component: ProviderCheckerComponent},
   { path: 'patient-list', component: PatientListComponent},
   { path: 'provider-list', component: ProviderListComponent},

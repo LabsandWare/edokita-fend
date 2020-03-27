@@ -9,7 +9,7 @@ export interface RouteInfo {
 }
 
 export const ROUTES: RouteInfo[] = [
-    { path: '/',     title: 'Dashboard',         icon:'nc-bank',       class: '' },
+    { path: '/dashboard',     title: 'Dashboard',         icon:'nc-bank',       class: '' },
     { path: '/provider-checker',   title: 'Provider Checker',              icon:'nc-pin-3',      class: '' },
     { path: '/patient-list',         title: 'Patient List',             icon:'nc-diamond',    class: '' },
     { path: '/provider-list', title: 'Provider List',     icon:'nc-bell-55',    class: '' },
@@ -18,7 +18,6 @@ export const ROUTES: RouteInfo[] = [
     { path: '/lab-list',    title: 'Laboratory List',        icon:'nc-caps-small', class: '' },
     { path: '/create',   title: 'Subscription Plan',              icon:'nc-pin-3',      class: '' },
     { path: '/edit',   title: 'Edit',              icon:'nc-pin-3',      class: '' },
-    { path: '/sms',   title: 'Messaging',              icon:'nc-pin-3',      class: '' },
     { path: '/sms',   title: 'Sms',              icon:'nc-pin-3',      class: '' },
     { path: '/email',   title: 'Email',              icon:'nc-pin-3',      class: '' },
     { path: '/view',   title: 'HMO',              icon:'nc-pin-3',      class: '' },
