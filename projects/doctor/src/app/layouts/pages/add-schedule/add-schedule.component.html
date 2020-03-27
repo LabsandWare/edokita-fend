@@ -1,27 +1,64 @@
-<div class="card ">
-    <div class="card-header ">
-      <h5 class="card-title">Fill all fields , to include a day that you
+<div class="card">
+    <div class="card-header">
+      <h5 class="ff-nunito fs-26">Fill all fields, to include a day that you
         won't be availabe </h5>
       <p class="card-category">24 Hours performance</p>
     </div>
     <div class="card-body ">
       <!-- <canvas id=chartHours width="400" height="40"></canvas> -->
-      <div class="col-6">
-        <!-- <div class="form-row"> -->
-            <div class="form-group">
-              <label for="inputEmail4">Date</label>
-              <input type="text" class="form-control" id="inputEmail4" placeholder="">
-            </div>
-            <div class="form-group">
-              <label for="inputPassword4">Time</label>
-              <input type="text" class="form-control" id="inputPassword4" placeholder="">
-            </div>
-            <div class="form-group ">
-                <input type="checkbox" class="custom-control-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Unavailable</label>
+      <div class="row">
+        <div class="col-6">
+          <!-- <div class="form-row"> -->
+            <form class="ff fs-18" >
+              <div class="form-group">
+                <label for="inputEmail4">Date</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="">
               </div>
-            <button type="submit" class="btn btn-primary">Confirm</button>
-          <!-- </div> -->
+              <div class="form-group">
+                <label for="inputPassword4">Time</label>
+                <input type="text" class="form-control" id="inputPassword4" placeholder="">
+              </div>
+              <div class="form-group ">
+                <mat-checkbox>Check me!</mat-checkbox>
+                </div>
+              <button type="submit" class="btn btn-primary">Confirm</button>
+            </form>
+            <!-- </div> -->
+        </div>
+        <div class="col-6">
+          <table class="table table-striped">
+            <thead class="bg-primary">
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Availability</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">11/09</th>
+                    <td>12:00AM</td>
+                    <td><img src="assets/img/success.svg" height="20"alt=""></td>
+                    <td class="text-danger bold">Remove</td>
+                </tr>
+                <tr>
+                    <th scope="row">12/09</th>
+                    <td>07:50PM</td>
+                    <td><img src="assets/img/close.svg" height="20"alt=""></td>
+                    <td class="text-danger bold">Remove</td>
+                    
+                </tr>
+                <tr>
+                    <th scope="row">13/09</th>
+                    <td>6:00AM</td>
+                    <td><img src="assets/img/success.svg" height="20" alt=""></td>
+                    <td class="text-danger bold">Remove</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
       </div>
     </div>
     <div class="card-footer ">
