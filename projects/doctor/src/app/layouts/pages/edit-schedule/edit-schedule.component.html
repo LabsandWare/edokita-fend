@@ -26,9 +26,8 @@
                 <input type="text" class="form-control" id="inputPassword4" placeholder="12:00PM">
               </div>
               <div class="form-group ">
-                <label class="checkbox-inline"><input type="checkbox" value="">    Unavailable</label>
-                </div>
-              <button type="submit" class="btn btn-primary">Confirm</button>
+                <mat-checkbox>Unavailable</mat-checkbox>
+              <button type="submit" class="btn btn-primary ml-2">Confirm</button>
           </div>
       </div>
     </div>
@@ -109,5 +108,8 @@
 .kung:active{
     border:  white !important;
     box-shadow: none !important;
+}
+::ng-deep .mat-checkbox .mat-checkbox-frame {
+  border-color: #0275d8
 }
   </style>

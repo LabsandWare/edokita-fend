@@ -6,7 +6,7 @@ import { PharmacyLayoutComponent } from './layouts/pharmacy-layout/pharmacy-layo
 export const PharmacyRoutes: Routes = [
 	{
 		path: 'pharmacy',
-		redirectTo: 'dashboard',
+		redirectTo: 'pharmacy/dashboard',
 		pathMatch: 'full',
 	},
 	{

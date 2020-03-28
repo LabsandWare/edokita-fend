@@ -20,6 +20,8 @@ import { SmsComponent } from '../pages/sms/sms.component';
 import { EmailComponent } from '../pages/email/email.component';
 import { ViewComponent } from '../pages/view/view.component';
 import { HmoCreateComponent } from '../pages/hmo-create/hmo-create.component';
+import { MatCheckboxModule, MatCheckbox} from '@angular/material/checkbox';
+
 
 
 
@@ -42,6 +44,7 @@ import { HmoCreateComponent } from '../pages/hmo-create/hmo-create.component';
   ],
   imports: [
     CommonModule,
+    MatCheckboxModule,
     FormsModule,
     RouterModule.forChild(AdminLayoutRoutes),
     NgbModule

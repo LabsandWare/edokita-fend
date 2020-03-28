@@ -6,7 +6,7 @@ import { LabLayoutComponent } from './layouts/lab-layout/lab-layout.component';
 export const LabRoutes: Routes = [
 	{
 		path: 'lab',
-		redirectTo: 'dashboard',
+		redirectTo: 'lab/dashboard',
 		pathMatch: 'full',
 	},
 	{

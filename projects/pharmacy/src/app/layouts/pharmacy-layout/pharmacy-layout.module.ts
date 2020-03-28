@@ -8,6 +8,9 @@ import { PharmacyLayoutRoutes } from './pharmacy-layout-routing';
 
 import { DashboardComponent } from '../pages/dashboard/dashboard.component';
 import { UserComponent } from '../pages/user/user.component';
+import { MatButtonModule} from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu'  ;
+import { MatToolbarModule } from '@angular/material/toolbar'
 
 
 
@@ -18,6 +21,9 @@ import { UserComponent } from '../pages/user/user.component';
   ],
   imports: [
     CommonModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatToolbarModule,
     FormsModule,
     RouterModule.forChild(PharmacyLayoutRoutes),
     NgbModule

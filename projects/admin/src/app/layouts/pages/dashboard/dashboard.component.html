@@ -1,122 +1,39 @@
 <div class="row">
-  <div class="col-lg-3 col-md-6 col-sm-6">
-    <div class="card card-stats">
-      <div class="card-body ">
-        <div class="row">
-          <div class="col-5 col-md-4">
-            <div class="icon-big text-center icon-warning">
-              <i class="nc-icon nc-globe text-warning"></i>
-            </div>
-          </div>
-          <div class="col-7 col-md-8">
-            <div class="numbers">
-              <p class="card-category">Capacity</p>
-              <p class="card-title">150GB
-                <p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card-footer ">
-        <hr>
-        <div class="stats">
-          <i class="fa fa-refresh"></i> Update Now
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-3 col-md-6 col-sm-6">
-    <div class="card card-stats">
-      <div class="card-body ">
-        <div class="row">
-          <div class="col-5 col-md-4">
-            <div class="icon-big text-center icon-warning">
-              <i class="nc-icon nc-money-coins text-success"></i>
-            </div>
-          </div>
-          <div class="col-7 col-md-8">
-            <div class="numbers">
-              <p class="card-category">Revenue</p>
-              <p class="card-title">$ 1,345
-                <p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card-footer ">
-        <hr>
-        <div class="stats">
-          <i class="fa fa-calendar-o"></i> Last day
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-3 col-md-6 col-sm-6">
-    <div class="card card-stats">
-      <div class="card-body ">
-        <div class="row">
-          <div class="col-5 col-md-4">
-            <div class="icon-big text-center icon-warning">
-              <i class="nc-icon nc-vector text-danger"></i>
-            </div>
-          </div>
-          <div class="col-7 col-md-8">
-            <div class="numbers">
-              <p class="card-category">Errors</p>
-              <p class="card-title">23
-                <p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card-footer ">
-        <hr>
-        <div class="stats">
-          <i class="fa fa-clock-o"></i> In the last hour
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-3 col-md-6 col-sm-6">
-    <div class="card card-stats">
-      <div class="card-body ">
-        <div class="row">
-          <div class="col-5 col-md-4">
-            <div class="icon-big text-center icon-warning">
-              <i class="nc-icon nc-favourite-28 text-primary"></i>
-            </div>
-          </div>
-          <div class="col-7 col-md-8">
-            <div class="numbers">
-              <p class="card-category">Followers</p>
-              <p class="card-title">+45K
-                <p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card-footer ">
-        <hr>
-        <div class="stats">
-          <i class="fa fa-refresh"></i> Update now
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-12">
+  <div class="col-md-6">
     <div class="card ">
       <div class="card-header ">
-        <h5 class="card-title">Users Behavior</h5>
-        <p class="card-category">24 Hours performance</p>
+        <span class="d-flex flex-row">
+          <img src="assets/img/hospital-bed.svg" height="50" alt="">
+          <h5 class="ff-nunito fs-26 bold mt-2 ml-4">425 Patients</h5>
+          <img src="assets/img/heart.svg" height="50" class="ml-auto">
+        </span>
       </div>
       <div class="card-body ">
-        <canvas id=chartHours width="400" height="100"></canvas>
+        <!-- <canvas id=chartHours width="400" height="40"></canvas> -->
       </div>
       <div class="card-footer ">
         <hr>
-        <div class="stats">
+        <div class="ff-nunito fs-20">
+          <i class="fa fa-history"></i> Updated 3 minutes ago
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card ">
+      <div class="card-header ">
+        <span class="d-flex flex-row">
+          <img src="assets/img/consultation.svg" height="50" alt="">
+          <h5 class="ff-nunito fs-26 bold mt-2 ml-4"> 100 Providers</h5>
+          <img src="assets/img/heart.svg" height="50" class="ml-auto">
+        </span>
+      </div>
+      <div class="card-body ">
+        <!-- <canvas id=chartHours width="400" height="40"></canvas> -->
+      </div>
+      <div class="card-footer ">
+        <hr>
+        <div class="ff-nunito fs-20">
           <i class="fa fa-history"></i> Updated 3 minutes ago
         </div>
       </div>
@@ -124,37 +41,79 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-md-4">
-    <div class="card ">
-      <div class="card-header ">
-        <h5 class="card-title">Email Statistics</h5>
-        <p class="card-category">Last Campaign Performance</p>
-      </div>
-      <div class="card-body ">
-        <canvas id="chartEmail"></canvas>
-      </div>
-      <div class="card-footer ">
-        <div class="legend">
-          <i class="fa fa-circle text-primary"></i> Opened
-          <i class="fa fa-circle text-warning"></i> Read
-          <i class="fa fa-circle text-danger"></i> Deleted
-          <i class="fa fa-circle text-gray"></i> Unopened
-        </div>
-        <hr>
-        <div class="stats">
-          <i class="fa fa-calendar"></i> Number of emails sent
-        </div>
-      </div>
+  <div class="col-md-6 col-lg-6 col-sm-12">
+    <!-- <div class="col-lg-12 col-md-12 col-sm-12"> -->
+      
+      <!-- </div> -->
     </div>
+    <div class="col-md-6 col-lg-6 col-sm-12"></div>
+    
+    <div></div>
   </div>
-  <div class="col-md-8">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card card-chart">
+        <div class="card-header">
+          <h5 class="ff-nunito fs-26 bold">New Patients</h5>
+          <p class="card-category"></p>
+        </div>
+        <div class="card-body">
+          <!-- <canvas id="speedChart" width="400" height="100"></canvas> -->
+          <p class="ff-nunito fs-21">Mike Afolabi, 10:50am</p>
+          <p class="ff-nunito fs-21">Okro Isaac, 6:00pm</p>
+          <p class="ff-nunito fs-21">Samson Philips, 4:12am</p>
+          <span class="d-flex justify-content-between">
+            <p class="ff-nunito fs-20">12 More</p>
+            <button class="btn btn-primary ff-nunito">View all</button>
+          </span>
+          
+        </div>
+        <div class="card-footer">
+          <div class="chart-legend">
+            <i class="fa fa-circle text-info"></i> Tesla Model S
+            <i class="fa fa-circle text-warning"></i> BMW 5 Series
+          </div>
+          <hr/>
+          <div class="ff-nunito fs-20">
+            <i class="fa fa-check"></i> Data information certified
+          </div>
+        </div>
+      </div>
+      <div class="card ">
+        <div class="card-header ">
+          <span class="d-flex flex-row">
+            <img src="assets/img/hospital-bed.svg" height="50" alt="">
+            <h5 class="ff-nunito fs-26 bold mt-2 ml-4">100 Patients registered to HMO</h5>
+            <img src="assets/img/heart.svg" height="50" class="ml-auto">
+          </span>
+        </div>
+        <div class="card-body ">
+          <!-- <canvas id=chartHours width="400" height="40"></canvas> -->
+        </div>
+        <div class="card-footer ">
+          <hr>
+          <div class="ff-nunito fs-20">
+            <i class="fa fa-history"></i> Updated 3 minutes ago
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="col-md-6">
     <div class="card card-chart">
       <div class="card-header">
-        <h5 class="card-title">NASDAQ: AAPL</h5>
-        <p class="card-category">Line Chart with Points</p>
+        <h5 class="ff-nunito fs-26 bold">New Providers</h5>
+        <p class="card-category"></p>
       </div>
       <div class="card-body">
-        <canvas id="speedChart" width="400" height="100"></canvas>
+        <!-- <canvas id="speedChart" width="400" height="100"></canvas> -->
+        <p class="ff-nunito fs-21">Dr Mike Afolabi</p>
+        <p class="ff-nunito fs-21">Dr Okro Isaac</p>
+        <p class="ff-nunito fs-21">Dr Samson Philips</p>
+        <span class="d-flex justify-content-between">
+          <p class="ff-nunito fs-20">12 More</p>
+          <button class="btn btn-primary ff-nunito">View all</button>
+        </span>
+        
       </div>
       <div class="card-footer">
         <div class="chart-legend">
@@ -162,7 +121,7 @@
           <i class="fa fa-circle text-warning"></i> BMW 5 Series
         </div>
         <hr/>
-        <div class="card-stats">
+        <div class="ff-nunito fs-20">
           <i class="fa fa-check"></i> Data information certified
         </div>
       </div>
