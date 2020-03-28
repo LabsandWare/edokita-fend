@@ -7,7 +7,7 @@ import { RegisterComponent } from './layouts/pages/register/register.component';
 export const HospitalRoutes: Routes = [
 	{
 		path: 'hospital',
-		redirectTo: 'dashboard',
+		redirectTo: 'hospital/dashboard',
 		pathMatch: 'full',
 	},
 	{
