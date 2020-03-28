@@ -1,0 +1,50 @@
+<div class="container-fluid" style="background-color: white; height: 100%;">
+
+
+    <div class="row" style="height: 100%;">
+
+        <form [formGroup]="form" (submit)="onLogin()" class="col-md-4 offset-md-4" style="margin-top: 20vh;">
+            <input type="hidden">
+            <div class="d-table m-auto p-3">
+                <a href="#">
+                    <img src="assets/img/logo.jpeg" alt="" style="margin-right:20px; width:130px;">
+                </a>
+                <p class="text-center fs-14 fw-600" style="margin-top:0; margin-bottom:0; color:#f5a54a;">
+                    <i>OUR MOTTO</i>
+                </p>
+            </div>
+
+
+            <input formControlName="Username" [ngClass]="{'is-invalid': submitted && f.Username.errors }" type="text"
+                placeholder="Email / Phone Number" class="form-control" name="login" value="" required autofocus
+                style="color:#b1bac8;font-size: 14px;">
+
+
+            <input type="password" formControlName="Password" [ngClass]="{'is-invalid': submitted && f.Password.errors}"
+                placeholder="Password" class="form-control mt-4" autocomplete="off">
+
+
+            <button class="btn btn-block"
+                style="margin-top: 50px; background-color: #0275d8;font-size: 14px;font-weight: 600;" type="submit">SIGN
+                IN</button>
+            <div class="form-group">
+                <div class="col-md-8 col-md-offset-4 mt-2 pl-0">
+                    <a routerLink="/forgot-password">
+                        Forgot Password?
+                    </a>
+                </div>
+            </div>
+
+
+        </form>
+
+
+        <div class="col-md-12 floater d-flex justify-content-center align-items-center">Powered by Labs and Ware</div>
+
+
+    </div>
+
+
+
+
+</div>

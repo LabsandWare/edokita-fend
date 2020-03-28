@@ -1,0 +1,91 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="card ">
+      <div class="card-header ">
+        <h5 class="ff-nunito fs-26 bold">Welcome, AAA Hospitals</h5>
+        <!-- <p class="card-category">24 Hours performance</p> -->
+      </div>
+      <div class="card-body ">
+        <!-- <canvas id=chartHours width="400" height="40"></canvas> -->
+        <div class="row">
+          <div class="col-8">
+              <form class="ff fs-18 ">
+                <p class="ff-nunito fs-20 bold">Hospital Details</p>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Hospital Name</label>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="BYDS LAB">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">State</label>
+                    <select class="form-control">
+                      <option>Lagos</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Address </label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Phone</label>
+                        <input type="tel" class="form-control" id="inputPhone" placeholder="09055328886">
+                      </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Resident Doctor</label>
+                        <input type="tel" class="form-control" id="inputEmail4" placeholder="Dr. Aramide Kilo">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Socials</label>
+                        <input type="text" class="form-control" placeholder="kilo_aramide">
+                      </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="inputCity">Services Rendered</label>
+                    <textarea type="text" class="form-control" id="inputCity">
+                    </textarea>
+                  </div>
+                </div>
+                  <p class="ff-nunito fs-20 bold">Change password</p>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" id="inputEmail4" placeholder="Old Password">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" id="inputPassword4" placeholder="New Password">
+                    </div>
+                  </div>
+
+                <button type="submit" class="btn btn-primary">Update</button>
+              </form>
+          </div>
+          <div class="col-4">
+            <img src="assets/img/information.svg" class="ml-5" height="250" alt="">
+            <p class="text-center text-underline ff fs-18 bold"(click)="filePicker2.click()">Update Photo</p>
+            <input type="file" #filePicker2 style="display: none;">
+            <div style="margin-top: 250px;">
+              <p class="mt-5 ff fs-20 ">Upload a scanned copy of your Lab License(120kb)</p>
+              <button class="btn btn-primary" (click)="filePicker1.click()"> Choose a File</button>
+              <input type="file" #filePicker1 style="display: none;">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer ">
+        <hr>
+        <div class="stats">
+          <i class="fa fa-history"></i> Updated 3 minutes ago
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

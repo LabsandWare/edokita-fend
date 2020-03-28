@@ -6,7 +6,7 @@ import { HospitalLayoutComponent } from './layouts/hospital-layout/hospital-layo
 export const HospitalRoutes: Routes = [
 	{
 		path: 'hospital',
-		redirectTo: 'dashboard',
+		redirectTo: 'hospital/dashboard',
 		pathMatch: 'full',
 	},
 	{
