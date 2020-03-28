@@ -8,15 +8,17 @@ export interface RouteInfo {
     class: string;
 }
 
+
 export const ROUTES: RouteInfo[] = [
-    { path: '/dashboard',     title: 'Dashboard',         icon:'nc-bank',       class: '' },
-    { path: '/email',         title: 'Send mail',             icon:'nc-diamond',    class: '' },
-    // { path: '/maps',          title: 'Maps',              icon:'nc-pin-3',      class: '' },
-    // { path: '/notifications', title: 'Notifications',     icon:'nc-bell-55',    class: '' },
-    // { path: '/user',          title: 'User Profile',      icon:'nc-single-02',  class: '' },
-    // { path: '/table',         title: 'Table List',        icon:'nc-tile-56',    class: '' },
-    // { path: '/typography',    title: 'Typography',        icon:'nc-caps-small', class: '' },
-    // { path: '/upgrade',       title: 'Upgrade to PRO',    icon:'nc-spaceship',  class: 'active-pro' },
+    { path: '/patient',         title: 'Dashboard',         icon:'nc-bank',       class: '' },
+    { path: '/email',           title: 'Send mail',             icon:'nc-diamond',    class: '' },
+    { path: '/patient/profile', title: 'Update Profile',     icon:'nc-bell-55',    class: '' },
+    { path: '/patient/history', title: 'PATIENT HEALTH HISTORY', icon:'nc-pin-3',      class: '' },
+    { path: '/patient/add-dependent', title: 'Add dependent',     icon:'nc-bell-55',    class: '' },
+    { path: '/patient/medical-report',title: 'Medical Report',      icon:'nc-single-02',  class: '' },
+    { path: '/',         title: 'Freebies',        icon:'nc-tile-56',    class: '' },
+    { path: '/patient/doctor',    title: 'Talk to a Doctor',        icon:'nc-caps-small', class: '' },
+    { path: '/patient/pharmacy',       title: 'Find Phamarcy',    icon:'nc-spaceship',  class: 'active-pro' },
 ];
 
 @Component({
