@@ -18,9 +18,9 @@
                 <label for="inputPassword4">Time</label>
                 <input type="text" class="form-control" id="inputPassword4" placeholder="">
               </div>
-              <div class="form-group ">
-                <input type="checkbox" name="Unavailable" id=""> <label for="" class="ml-2">Unavailable</label>
-                </div>
+              <div class="form-group">
+                <mat-checkbox>Unavailable</mat-checkbox>
+              </div>
               <button type="submit" class="btn btn-primary">Confirm</button>
             </form>
             <!-- </div> -->
@@ -68,3 +68,8 @@
       </div>
     </div>
   </div>
+<style>
+  ::ng-deep .mat-checkbox .mat-checkbox-frame {
+  border-color: #0275d8
+}
+</style>

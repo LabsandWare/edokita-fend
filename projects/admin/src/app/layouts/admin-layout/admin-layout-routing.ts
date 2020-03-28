@@ -26,7 +26,7 @@ export const AdminLayoutRoutes: Routes = [
   { path: 'edit', component: EditComponent},
   { path: 'sms', component: SmsComponent},
   { path: 'email', component: EmailComponent},
-  { path: 'view', component: ViewComponent},
+  { path: 'hmo-view', component: ViewComponent},
   { path: 'hmo-create', component: HmoCreateComponent},
  
 ];
