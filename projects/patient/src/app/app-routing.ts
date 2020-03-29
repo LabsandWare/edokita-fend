@@ -6,7 +6,7 @@ import { PatientLayoutComponent } from './layouts/patient-layout/patient-layout.
 export const PatientRoutes: Routes = [
 	{
 		path: 'patient',
-		redirectTo: 'dashboard',
+		redirectTo: 'patient/dashboard',
 		pathMatch: 'full',
 	},
 	{

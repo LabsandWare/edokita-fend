@@ -10,13 +10,17 @@ export interface RouteInfo {
 
 export const ROUTES: RouteInfo[] = [
     { path: '/dashboard',     title: 'Dashboard',         icon:'nc-bank',       class: '' },
-    { path: '/email',         title: 'Send mail',             icon:'nc-diamond',    class: '' },
-    // { path: '/maps',          title: 'Maps',              icon:'nc-pin-3',      class: '' },
-    // { path: '/notifications', title: 'Notifications',     icon:'nc-bell-55',    class: '' },
-    // { path: '/user',          title: 'User Profile',      icon:'nc-single-02',  class: '' },
-    // { path: '/table',         title: 'Table List',        icon:'nc-tile-56',    class: '' },
-    // { path: '/typography',    title: 'Typography',        icon:'nc-caps-small', class: '' },
-    // { path: '/upgrade',       title: 'Upgrade to PRO',    icon:'nc-spaceship',  class: 'active-pro' },
+    { path: '/profile-update',         title: 'Profile Update',             icon:'nc-diamond',    class: '' },
+    // { path: '/pat-hea-his',          title: 'Patient Health History',              icon:'nc-pin-3',      class: '' },
+    // { path: '/add-dependent', title: 'Add Dependent',     icon:'nc-bell-55',    class: '' },
+    // { path: '/medical-report',          title: 'Medical Report',      icon:'nc-single-02',  class: '' },
+    // { path: '/talk-to-doctor',         title: 'Talk to a Doctor',        icon:'nc-tile-56',    class: '' },
+    // { path: '/find-pharmacy',    title: 'Find Pharmacy',        icon:'nc-caps-small', class: '' },
+    // { path: '/find-hospital',       title: 'Find Hospital',    icon:'nc-spaceship',  class: 'active-pro' },
+    // { path: '/find-lab',       title: 'Find Lab',    icon:'nc-spaceship',  class: 'active-pro' },
+    // { path: '/book-appointment',       title: 'Book Appointment',    icon:'nc-spaceship',  class: 'active-pro' },
+    // { path: '/my-prescription',       title: 'My Prescription',    icon:'nc-spaceship',  class: 'active-pro' },
+    // { path: '/hmo',       title: 'HMO',    icon:'nc-spaceship',  class: 'active-pro' },
 ];
 
 @Component({
