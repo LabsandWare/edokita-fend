@@ -10,20 +10,20 @@ export interface RouteInfo {
 
 
 export const ROUTES: RouteInfo[] = [
-    { path: '/patient',         title: 'Dashboard',         icon:'nc-bank',       class: '' },
-    { path: '/email',           title: 'Send mail',             icon:'nc-diamond',    class: '' },
-    { path: '/patient/profile', title: 'Update Profile',     icon:'nc-bell-55',    class: '' },
-    { path: '/patient/history', title: 'PATIENT HEALTH HISTORY', icon:'nc-pin-3',      class: '' },
-    { path: '/patient/add-dependent', title: 'Add dependent',     icon:'nc-bell-55',    class: '' },
-    { path: '/patient/medical-report',title: 'Medical Report',      icon:'nc-single-02',  class: '' },
-    { path: '/',         title: 'Freebies',        icon:'nc-tile-56',    class: '' },
-    { path: '/patient/doctor',    title: 'Talk to a Doctor',        icon:'nc-caps-small', class: '' },
-    { path: '/patient/pharmacy',       title: 'Find Phamarcy',    icon:'nc-spaceship',  class: 'active-pro' },
-    { path: '/patient/hospital',           title: 'Find Hospital', icon:'nc-diamond',    class: '' },
-    { path: '/patient/lab',           title: 'Find Lab', icon:'nc-spaceship',    class: '' },
-    { path: '/patient/appointment', title: 'Book an Appointment',     icon:'nc-bell-55',    class: '' },
-    { path: '/patient/prescription', title: 'My prescription', icon:'nc-pin-3',      class: '' },
-    { path: '/patient/hmo', title: 'HMO', icon:'nc-single-02',      class: '' },
+    { path: '/patient',         title: 'Dashboard',         icon:'',       class: '' },
+    // { path: '/email',           title: 'Send mail',             icon:'nc-diamond',    class: '' },
+    { path: '/patient/profile', title: 'Update Profile',     icon:'',    class: '' },
+    { path: '/patient/history', title: 'PATIENT HEALTH HISTORY', icon:'',      class: '' },
+    { path: '/patient/add-dependent', title: 'Add dependent',     icon:'',    class: '' },
+    { path: '/patient/medical-report',title: 'Medical Report',      icon:'',  class: '' },
+    { path: '/',         title: 'Freebies',        icon:'',    class: '' },
+    { path: '/patient/doctor',    title: 'Talk to a Doctor',        icon:'', class: '' },
+    { path: '/patient/pharmacy',       title: 'Find Phamarcy',    icon:'',  class: 'active-pro' },
+    { path: '/patient/hospital',           title: 'Find Hospital', icon:'',    class: '' },
+    { path: '/patient/lab',           title: 'Find Lab', icon:'',    class: '' },
+    { path: '/patient/appointment', title: 'Book an Appointment',     icon:'',    class: '' },
+    { path: '/patient/prescription', title: 'My prescription', icon:'',      class: '' },
+    { path: '/patient/hmo', title: 'HMO', icon:'',      class: '' },
 
 ];
 
