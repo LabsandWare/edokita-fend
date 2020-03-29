@@ -2,12 +2,17 @@ import { Routes } from '@angular/router';
 
 
 import { LabLayoutComponent } from './layouts/lab-layout/lab-layout.component';
+import { RegisterComponent } from './layouts/pages/register/register.component';
 
 export const LabRoutes: Routes = [
 	{
 		path: 'lab',
 		redirectTo: 'dashboard',
 		pathMatch: 'full',
+	},
+	{
+		path: 'lab/register',
+		component: RegisterComponent,
 	},
 	{
 		path: 'lab',

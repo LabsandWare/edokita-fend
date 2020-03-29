@@ -13,11 +13,13 @@ import { AppComponent } from './app.component';
 
 import { PharmacyRoutes } from './app-routing';
 import { PharmacyLayoutComponent } from './layouts/pharmacy-layout/pharmacy-layout.component';
+import { RegisterComponent } from './layouts/pages/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PharmacyLayoutComponent
+    PharmacyLayoutComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
