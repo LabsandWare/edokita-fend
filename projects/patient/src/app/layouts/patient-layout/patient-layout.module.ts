@@ -14,7 +14,14 @@ import { DepedentComponent } from '../pages/depedent/depedent.component';
 import { MedicalReportComponent } from '../pages/medical-report/medical-report.component';
 import { DoctorComponent } from '../pages/doctor/doctor.component';
 import { PharmacyComponent } from '../pages/pharmacy/pharmacy.component';
-
+import { HospitalComponent } from '../pages/hospital/hospital.component';
+import { LabComponent } from '../pages/lab/lab.component';
+import { AppointmentComponent } from '../pages/appointment/appointment.component';
+import { Appointment1Component } from '../pages/appointment/appointment1/appointment1.component';
+import { Appointment2Component } from '../pages/appointment/appointment2/appointment2.component';
+import { Appointment3Component } from '../pages/appointment/appointment3/appointment3.component';
+import { PrescriptionComponent } from '../pages/prescription/prescription.component';
+import { HMOComponent } from '../pages/hmo/hmo.component';
 
 
 @NgModule({
@@ -26,7 +33,15 @@ import { PharmacyComponent } from '../pages/pharmacy/pharmacy.component';
     DepedentComponent,
     MedicalReportComponent,
     DoctorComponent,
-    PharmacyComponent
+    PharmacyComponent,
+    HospitalComponent,
+    LabComponent,
+    AppointmentComponent,
+    Appointment1Component,
+    Appointment2Component,
+    Appointment3Component,
+    PrescriptionComponent,
+    HMOComponent
   ],
   imports: [
     CommonModule,

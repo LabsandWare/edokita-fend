@@ -19,6 +19,12 @@ export const ROUTES: RouteInfo[] = [
     { path: '/',         title: 'Freebies',        icon:'nc-tile-56',    class: '' },
     { path: '/patient/doctor',    title: 'Talk to a Doctor',        icon:'nc-caps-small', class: '' },
     { path: '/patient/pharmacy',       title: 'Find Phamarcy',    icon:'nc-spaceship',  class: 'active-pro' },
+    { path: '/patient/hospital',           title: 'Find Hospital', icon:'nc-diamond',    class: '' },
+    { path: '/patient/lab',           title: 'Find Lab', icon:'nc-spaceship',    class: '' },
+    { path: '/patient/appointment', title: 'Book an Appointment',     icon:'nc-bell-55',    class: '' },
+    { path: '/patient/prescription', title: 'My prescription', icon:'nc-pin-3',      class: '' },
+    { path: '/patient/hmo', title: 'HMO', icon:'nc-single-02',      class: '' },
+
 ];
 
 @Component({
