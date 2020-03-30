@@ -10,10 +10,19 @@
   </div>
     <ul class="nav">
         <li *ngFor="let menuItem of menuItems" routerLinkActive="active" class="{{menuItem.class}}">
-            <a [routerLink]="[menuItem.path]">
-                <i class="nc-icon {{menuItem.icon}}"></i>
-                <p>{{menuItem.title}}</p>
+            <a routerLink="/patient{{menuItem.path}}">
+                <!-- <i class="nc-icon {{menuItem.icon}}"></i> -->
+                <p class="ff-nunito fs-21 bold {{menuItem.class}}">{{menuItem.title}}</p>
             </a>
         </li>
     </ul>
 </div>
+<style>
+.black{
+  color: black;
+}
+.dim{
+  color: darkolivegreen;
+}
+
+</style>

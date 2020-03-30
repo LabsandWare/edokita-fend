@@ -12,11 +12,27 @@ import { AppComponent } from './app.component';
 
 import { PatientRoutes } from './app-routing';
 import { PatientLayoutComponent } from './layouts/patient-layout/patient-layout.component';
+import { RegisterComponent } from './layouts/pages/register/register.component';
+import { LoginComponent } from './layouts/pages/login/login.component';
+
+// import { ProfileComponent } from './layouts/pages/Profile/profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PatientLayoutComponent
+    PatientLayoutComponent,
+    RegisterComponent,
+    LoginComponent,
+ 
+  
+   
+  
+   
+   
+   
+  
+    
+   
   ],
   imports: [
     BrowserModule,

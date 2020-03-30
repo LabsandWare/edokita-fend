@@ -1,0 +1,145 @@
+<div class="card">
+	<div class="row">
+		<div class="col-md-8"></div>
+		<div class="col-md-4 mb-5">
+			<h4 class="text-secondary">Dashboard > Add dependant
+			</h4>
+		</div>
+	</div>
+	
+	
+	
+	<div class="row">
+		<div class="col-md-4">
+			<div class="col-12">
+				<p class="ff-nunito fs-26 bold">Add dependant</p>
+				<form class="ff fs-18">
+	
+					<div class="form-row">
+						<div class="form-group col-md-12">
+							<input type="email" class="form-control" id="inputEmail4" placeholder="Firstname">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-12">
+							<input type="email" class="form-control" id="inputEmail4" placeholder="Lastname">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-12">
+							<select class="form-control">
+								<option>Gender</option>
+								<option>Male</option>
+								<option>Female</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-12">
+							<select class="form-control">
+								<option>Relationship</option>
+							</select>
+						</div>
+					</div>
+	
+					<div class="form-row">
+						<div class="form-group col-md-12">
+							<select class="form-control">
+								<option>Blood group</option>
+							</select>
+						</div>
+					</div>
+	
+					<div class="form-row">
+						<div class="form-group col-md-12">
+							<input type="text" class="form-control" id="inputEmail4" placeholder="Password">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-12">
+							<input type="text" class="form-control" id="inputEmail4" placeholder="Confirm Password">
+						</div>
+					</div>
+					<div>
+						<button type="submit" class="btn btn-primary px-5 ml-5">Save</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- table column -->
+		<div class="col-md-8">
+			<div class="col-12">
+				<div class="row">
+					<div class="col-md-4">
+						<p class="ff-nunito fs-26 bold">List of Dependants</p>
+					</div>
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<form>
+							<div class="input-group no-border">
+								<input type="text" value="" class="form-control" placeholder="Search...">
+								<div class="input-group-append">
+									<div class="input-group-text">
+										<i class="nc-icon nc-zoom-split"></i>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="card">
+					<div class="table-responsive">
+						<table class="table table-striped col-12">
+							<thead class="text-white bg-primary">
+								<tr>
+									<th scope="col">S/N</th>
+									<th scope="col">FullName</th>
+									<th scope="col">Username</th>
+									<th scope="col">ID</th>
+									<th scope="col">Relationship</th>
+									<th scope="col">Actions</th>
+		
+		
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mary Mike</td>
+									<td>mary_mike</td>
+									<td>358496</td>
+									<td>Wife</td>
+									<td class=" p-0 m-0 nav-item" ngbDropdown placement="bottom-left" >
+										<a class="nav-link " ngbDropdownToggle id="navbarDropdownMenuLink">More</a>
+										<div ngbDropdownMenu aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu dropdown-menu-right">
+											<a ngbDropdownItem href="javascript:void(0)">Update Profile</a>
+											<a ngbDropdownItem href="javascript:void(0)">LogOut</a>
+										</div>
+									</td>
+		
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Mary Mike</td>
+									<td>mary_mike</td>
+									<td>358496</td>
+									<td>Wife</td>
+									<td class=" p-0 m-0 nav-item" ngbDropdown placement="bottom-left" >
+										<a class="nav-link " ngbDropdownToggle id="navbarDropdownMenuLink">More</a>
+										<div ngbDropdownMenu aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu dropdown-menu-right">
+											<a ngbDropdownItem href="javascript:void(0)">Update Profile</a>
+											<a ngbDropdownItem href="javascript:void(0)">LogOut</a>
+										</div>
+									</td>
+		
+								</tr>
+		
+							</tbody>
+						</table>
+					</div>
+	
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

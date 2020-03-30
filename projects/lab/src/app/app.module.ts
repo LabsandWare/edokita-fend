@@ -12,11 +12,13 @@ import { AppComponent } from './app.component';
 
 import { LabRoutes } from './app-routing';
 import { LabLayoutComponent } from './layouts/lab-layout/lab-layout.component';
+import { RegisterComponent } from './layouts/pages/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LabLayoutComponent
+    LabLayoutComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
