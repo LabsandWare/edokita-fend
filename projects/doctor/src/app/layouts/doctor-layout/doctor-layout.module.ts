@@ -17,7 +17,6 @@ import { SmsComponent } from '../pages/sms/sms.component';
 import { EmailComponent } from '../pages/email/email.component';
 import { MatCheckboxModule, MatCheckbox} from '@angular/material/checkbox';
 
- 
 
 @NgModule({
   declarations: [
@@ -30,8 +29,6 @@ import { MatCheckboxModule, MatCheckbox} from '@angular/material/checkbox';
     EditScheduleComponent,
     SmsComponent,
     EmailComponent
-
-    
   ],
   imports: [
     CommonModule,
