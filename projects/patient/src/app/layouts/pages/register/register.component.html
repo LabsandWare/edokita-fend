@@ -1,125 +1,131 @@
 <div style="background-color: white !important;">
-    <div class="row py-5 m-0">
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-            <div class="row">
-                <div class="col-3">
-                    <button class="btn btn-primary px-3" type="submit">Register</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-primary px-3" type="submit">Login</button>
-    
-                </div>
-            </div>
-               
-        </div>
-    </div>
-    
-    <nav class="navbar navbar-light ff fs-18 bold">
+    <nav class="navbar navbar-light ff fs-18 bold bg-primary">
         <span class="navbar-brand mb-0">eDOKITA</span>
         <ul class="nav justify-content-end ">
             <li class="nav-item ">
-              <a class="nav-link text-primary" href="#">Home</a>
+                <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">About us</a>
+                <a class="nav-link text-dark" href="#">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Resources</a>
+                <a class="nav-link text-dark" href="#">Resources</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Contact us</a>
+                <a class="nav-link text-dark" href="#">Contact us</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-dark" href="#">FAQs</a>
-              </li>
-          </ul>
+            </li>
+        </ul>
     </nav>
-    
+    <div class="row py-5 m-0">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <span routerLink='/doctor/register'
+                class="badge badge-pill badge-primary px-4 py-2 mx-1 fs-18">Doctor</span>
+            <span routerLink='/pharmacy/register'
+                class="badge badge-pill badge-secondary px-4 py-2 mx-1 fs-18">Pharmacy</span>
+            <span routerLink='/hospital/register'
+                class="badge badge-pill badge-warning px-4 py-2 mx-1 fs-18">Hospital</span>
+            <span routerLink='/lab/register' class="badge badge-pill badge-danger px-4 py-2 mx-1 fs-18">Lab</span>
+        </div>
+        <div class="col-sm-4"></div>
+
+    </div>
+
     <div class="row m-0">
         <div class="col-md-6">
             <img src="assets/img/doc.jpg" alt="">
         </div>
         <div class="col-md-6 ff fs-21">
-            <h4 class="text-center ff-nunito fs-26 bold">Patient's Registration</h4>
+            <h4 class="text-center ff-nunito fs-26 bold mt-2">Patient's Registration</h4>
             <p class="text-center text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
                 eiusmod tempor incididunt ut </p>
-            <div class="col-12">
-                <form >
-    
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="First Name">
+            <form [formGroup]="signupForm" (submit)="onSignup()">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" formControlName="firstName" class="form-control" 
+                                placeholder="FirstName" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }">
                         </div>
-                        <div class="form-group col-md-6">
-    
-                            <input type="text" class="form-control" id="inputPassword4" placeholder="Last Name">
+                        <div class="form-group">
+                            <input type="email" formControlName="email" class="form-control" 
+                                placeholder="Email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="number" class="form-control" id="inputEmail4" placeholder="Phone">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <select class="form-control">
-                                <option>Gender</option>
+                        <div class="form-group">
+                            <select formControlName="gender" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.gender.errors }">
+                                <option [ngValue]="null">Gender</option>
+                                <option *ngFor="let mode of modes" [value]="mode.value">{{mode.display}}</option>
                             </select>
                         </div>
-                        <div class="form-group col-md-6">
-                            <select class="form-control">
-                                <option>Country</option>
+                        <div class="form-group">
+                            <select formControlName="country" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.country.errors }">
+                                <option [ngValue]="null">Country</option>
+                                <option>Nigeria</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <select class="form-control">
-                                <option>State </option>
+                        <div class="form-group">
+                            <select formControlName="state" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.state.errors }"
+                            (change)="onState($event)">
+                                <option [ngValue]="null">State</option>
+                                <option *ngFor="let state of states" [value] = "state.state">{{state.state}}</option>
                             </select>
                         </div>
-                        <div class="form-group col-md-6">
-                            <select class="form-control">
-                                <option>City</option>
+                        <div class="form-group">
+                            <select *ngIf="!lgas" class="form-control">
+                                <option [ngValue]="null">City</option>
+                            </select>
+                            <select *ngIf="lgas" formControlName="city" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.city.errors }">
+                                <option [ngValue]="null" disabled>City</option>
+                                <option *ngFor="let lga of lgas.lgas" [value]="lga">{{lga}}</option>
                             </select>
                         </div>
+                        
                     </div>
-                   
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputPassword4" placeholder="User Name">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" formControlName="lastName" class="form-control" 
+                                placeholder="Last Name" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }">
                         </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputAddress2"
-                            placeholder="Address">
+                        <div class="form-group">
+                            <input type="text" formControlName="phone" class="form-control" 
+                                placeholder="Phone" [ngClass]="{ 'is-invalid': submitted && f.phone.errors }">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" formControlName="address" class="form-control" id="inputPassword4"
+                                placeholder="Address" [ngClass]="{ 'is-invalid': submitted && f.address.errors }">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" formControlName="username" class="form-control" 
+                                placeholder="Username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" formControlName="password" class="form-control" 
+                                placeholder="Password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="password" formControlName="cPassword" class="form-control" id="inputPassword4"
+                                placeholder="Confirm Password" [ngClass]="{ 'is-invalid': submitted && f.cPassword.errors }">
+                                <div *ngIf="submitted && f.cPassword.errors" class="invalid-feedback">
+                                    <div *ngIf="f.cPassword.errors.required">Confirm Password is required</div>
+                                    <div *ngIf="f.cPassword.errors.mustMatch">Passwords must match</div>
+                                  </div>
                         </div>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="Old Password">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputPassword4" placeholder="New Password">
-                        </div>
+
+                </div>
+                <p class="text-center text-secondary">Accept <span style="color: royalblue;">terms and conditions</span>
+                </p>
+                <div class="row pb-5">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-5">
+                        <button type="submit" class="btn btn-primary">Register</button>
                     </div>
-                    <div class="row">  
-                        <div class="col-md-5"></div>
-                        <div class="col-md-5">
-                            <button type="submit" class="btn btn-primary">Login</button>
-                        </div>
-                    </div>
-                    <p class="text-center my-4">Accept <span style="color: royalblue;">terms and conditions</span> </p>
-                    <p class="text-center text-secondary">Are you a registered user? <span style="color: royalblue;">Login</span> </p>
-                    
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </div>
 
 </div>
-

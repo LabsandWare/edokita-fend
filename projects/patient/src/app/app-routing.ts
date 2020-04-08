@@ -16,10 +16,6 @@ export const PatientRoutes: Routes = [
 		component: RegisterComponent,
 	},
 	{
-		path: 'patient/login',
-		component: LoginComponent,
-	},
-	{
 		path: 'patient',
 		component: PatientLayoutComponent,
 		children: [
