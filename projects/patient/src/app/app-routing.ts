@@ -3,7 +3,6 @@ import { Routes } from '@angular/router';
 
 import { PatientLayoutComponent } from './layouts/patient-layout/patient-layout.component';
 import { RegisterComponent } from './layouts/pages/register/register.component';
-import { LoginComponent } from './layouts/pages/login/login.component';
 
 export const PatientRoutes: Routes = [
 	{

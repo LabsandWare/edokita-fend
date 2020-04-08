@@ -28,9 +28,9 @@ export class AuthService {
   getAuthStatusListener() {
     return this.authStatusListener.asObservable();
   }
-  login(Email: string, Password: string) {
-    const loginData: AuthData = { email: Email, password: Password };
-    this.http.post(this.baseApi+'login', loginData)
+  login(Username: string, Password: string) {
+    const loginData: AuthData = { email: Username, password: Password };
+    this.http.post('http://backend.webservices.pro/api/v1/', loginData)
       .subscribe((response:any) => {
         // console.log(response);<{ token: string, expiresIn: number, userId: string }>
         const token = response.token;

@@ -22,7 +22,7 @@ import { LoginComponent } from './layouts/pages/login/login.component';
     AppComponent,
     PatientLayoutComponent,
     RegisterComponent,
-    LoginComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

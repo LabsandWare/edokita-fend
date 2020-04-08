@@ -8,7 +8,8 @@ import { DoctorService } from '../../doctor.service';
 
 @Component({
   selector: 'app-register',
-  templateUrl: './register.component.html'
+  moduleId: module.id,
+  templateUrl: './register.component.html',
 })
 export class RegisterComponent implements OnInit {
   signupForm: FormGroup;

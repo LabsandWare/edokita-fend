@@ -18,6 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './auth/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 
+import { environment } from '../environments/environment'
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{provide: 'apiUrl', useValue: environment.baseApi }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
