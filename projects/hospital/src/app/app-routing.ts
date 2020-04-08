@@ -2,12 +2,17 @@ import { Routes } from '@angular/router';
 
 
 import { HospitalLayoutComponent } from './layouts/hospital-layout/hospital-layout.component';
+import { RegisterComponent } from './layouts/pages/register/register.component';
 
 export const HospitalRoutes: Routes = [
 	{
 		path: 'hospital',
 		redirectTo: 'hospital/dashboard',
 		pathMatch: 'full',
+	},
+	{
+		path: 'hospital/register',
+		component: RegisterComponent,
 	},
 	{
 		path: 'hospital',

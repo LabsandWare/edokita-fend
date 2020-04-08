@@ -12,11 +12,12 @@ import { AppComponent } from './app.component';
 import { DoctorRoutes } from './app-routing';
 
 import { DoctorLayoutComponent } from './layouts/doctor-layout/doctor-layout.component';
+import { RegisterComponent } from './layouts/pages/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,  
-    DoctorLayoutComponent
+    DoctorLayoutComponent, RegisterComponent
   ],
   imports: [
     BrowserModule,

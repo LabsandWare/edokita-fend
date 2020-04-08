@@ -12,11 +12,13 @@ import { AppComponent } from './app.component';
 
 import { HospitalRoutes } from './app-routing';
 import { HospitalLayoutComponent } from './layouts/hospital-layout/hospital-layout.component';
+import { RegisterComponent } from './layouts/pages/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HospitalLayoutComponent
+    HospitalLayoutComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
