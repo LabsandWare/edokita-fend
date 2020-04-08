@@ -1,23 +1,28 @@
 
 <div class="sidebar-wrapper">
-  <div class="author">
-    <p class="title text-center py-3 mb-0">John Mike</p>
-    <p class="font-weight-bold m-0 description text-center">
-      ID:<span style="color:blue;">2345678</span> 
-    </p>
-    <a href="#">
-      
-      <img class=" w-100 px-5 rounded-circle" src="assets/img/mike.jpg" alt="...">
-      
+  <div class="logo">
+    <a  class="simple-text logo-mini">
+      <div class="logo-image-small">
+        <!-- <img src="assets/img/angular2-logo.png"> -->
+      </div>
     </a>
-    
+    <img src="assets/img/logo.jpeg" alt="">
   </div>
     <ul class="nav">
         <li *ngFor="let menuItem of menuItems" routerLinkActive="active" class="{{menuItem.class}}">
-            <a [routerLink]="[menuItem.path]">
-                <i class="nc-icon {{menuItem.icon}}"></i>
-                <p>{{menuItem.title}}</p>
+            <a routerLink="/patient{{menuItem.path}}">
+                <!-- <i class="nc-icon {{menuItem.icon}}"></i> -->
+                <p class="ff-nunito fs-21 bold {{menuItem.class}}">{{menuItem.title}}</p>
             </a>
         </li>
     </ul>
 </div>
+<style>
+.black{
+  color: black;
+}
+.dim{
+  color: darkolivegreen;
+}
+
+</style>

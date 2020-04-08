@@ -8,7 +8,7 @@
         <div class="card-body ">
           <!-- <canvas id=chartHours width="400" height="40"></canvas> -->
           <div class="row">
-            <div class="col-8">
+            <div class="col-sm-8">
                 <form class="ff fs-18 ">
                   <p class="ff-nunito fs-20 bold">Personal Details</p>
                   <div class="form-row">
@@ -108,14 +108,27 @@
                   <button type="submit" class="btn btn-primary">Update</button>
                 </form>
             </div>
-            <div class="col-4">
-              <img src="assets/img/information.svg" class="ml-5" height="250" alt="">
-              <p class="text-center text-underline ff fs-18 bold"(click)="filePicker2.click()">Update Photo</p>
-              <div style="margin-top: 250px;">
-                <p class="mt-5 ff fs-20 ">Upload a scanned copy of your License(120kb)</p>
-                <button class="btn btn-primary" (click)="filePicker1.click()"> Choose a File</button>
-                <input type="file" #filePicker1 style="display: none;">
-                <input type="file" #filePicker2 style="display: none;">
+            <div class="col-sm-4">
+              <div class="d-none d-sm-block">
+                <img src="assets/img/information.svg" class="ml-5" height="250" alt="">
+                <p class="text-center text-underline ff fs-18 bold"(click)="filePicker2.click()">Update Photo</p>
+                <div style="margin-top: 250px;">
+                  <p class="mt-5 ff fs-20 ">Upload a scanned copy of your License(120kb)</p>
+                  <button class="btn btn-primary" (click)="filePicker1.click()"> Choose a File</button>
+                  <input type="file" #filePicker1 style="display: none;">
+                  <input type="file" #filePicker2 style="display: none;">
+                </div>
+
+              </div>
+              <div class="d-sm-none">
+                <img src="assets/img/information.svg" class="mt-1" height="250" alt="">
+                <p class="text-underline ff fs-18 bold"(click)="filePicker2.click()">Update Photo</p>
+                <div style="margin-top: 10px;">
+                  <p class="mt-5 ff fs-20 ">Upload a scanned copy of your License(120kb)</p>
+                  <button class="btn btn-primary" (click)="filePicker1.click()"> Choose a File</button>
+                  <input type="file" #filePicker1 style="display: none;">
+                  <input type="file" #filePicker2 style="display: none;">
+                </div>
 
               </div>
             </div>

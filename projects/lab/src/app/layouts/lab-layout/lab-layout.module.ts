@@ -10,6 +10,7 @@ import { DashboardComponent } from '../pages/dashboard/dashboard.component';
 import { UpdateProfileComponent } from '../pages/update-profile/update-profile';
 import { CreateComponent } from '../pages/create/create.component';
 import { ViewComponent } from '../pages/view/view.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 // import { UserComponent } from '../pages/user/user.component';
 
 
@@ -23,6 +24,7 @@ import { ViewComponent } from '../pages/view/view.component';
   ],
   imports: [
     CommonModule,
+    MatCheckboxModule,
     FormsModule,
     RouterModule.forChild(LabLayoutRoutes),
     NgbModule

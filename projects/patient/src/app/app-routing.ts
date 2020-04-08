@@ -8,7 +8,7 @@ import { LoginComponent } from './layouts/pages/login/login.component';
 export const PatientRoutes: Routes = [
 	{
 		path: 'patient',
-		redirectTo: 'dashboard',
+		redirectTo: 'patient/dashboard',
 		pathMatch: 'full',
 	},
 	{

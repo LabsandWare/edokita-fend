@@ -19,7 +19,7 @@ import { HMOComponent } from '../pages/hmo/hmo.component';
 // import { RegisterComponent } from '../pages/register/register.component';
 
 export const PatientLayoutRoutes: Routes = [
-  { path: '',      component: DashboardComponent },
+  { path: 'dashboard',      component: DashboardComponent },
   { path: 'user',           component: UserComponent },
   { path: 'profile', component:ProfileComponent},
   { path: 'history', component:PatientHistoryComponent},
