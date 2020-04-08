@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 
 import { FooterModule } from './shared/footer/footer.module';
 import { FixedPluginModule } from './shared/fixedplugin/fixedplugin.module';
@@ -23,16 +23,6 @@ import { LoginComponent } from './layouts/pages/login/login.component';
     PatientLayoutComponent,
     RegisterComponent,
     LoginComponent,
- 
-  
-   
-  
-   
-   
-   
-  
-    
-   
   ],
   imports: [
     BrowserModule,
@@ -42,7 +32,8 @@ import { LoginComponent } from './layouts/pages/login/login.component';
     FooterModule,
     FixedPluginModule,
     NavbarModule,
-    SidebarModule
+    SidebarModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

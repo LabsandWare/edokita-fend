@@ -43,7 +43,7 @@
     </div>
 </div>
 
-<div class="row">
+<div *ngIf="viewMode" class="row">
     <div class="col-md-8">
         <div class="row">
             <div class="col-sm-6">
@@ -75,7 +75,7 @@
                             <img class=" w-75" src="assets/img/chat.png" alt="...">
                           </div>
                           <div class="col-lg-3 mr-auto">
-                            <img class=" w-75" src="assets/img/video.png" alt="...">
+                            <img class=" w-75" (click)="call()" src="assets/img/video.png" alt="...">
                           </div>
                           <div class="col-lg-3 mr-auto">
                             <img class=" w-75" src="assets/img/add.jpg" alt="...">
@@ -247,3 +247,4 @@
        </div>
     </div>
 </div>
+<video *ngIf="!viewMode" autoplay playsinline></video>

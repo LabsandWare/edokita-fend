@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 
 import { FooterModule } from './shared/footer/footer.module';
 import { FixedPluginModule } from './shared/fixedplugin/fixedplugin.module';
@@ -28,7 +28,8 @@ import { RegisterComponent } from './layouts/pages/register/register.component';
     FooterModule,
     FixedPluginModule,
     NavbarModule,
-    SidebarModule
+    SidebarModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

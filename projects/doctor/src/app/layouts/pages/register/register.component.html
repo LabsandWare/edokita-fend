@@ -1,161 +1,173 @@
 <div style="background-color: white !important;">
-    <div class="row py-5 m-0">
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-            <div class="row">
-                <div class="col-3">
-                    <button class="btn btn-primary px-3" type="submit">Register</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-primary px-3" type="submit">Login</button>
-    
-                </div>
-            </div>
-               
-        </div>
-    </div>
-    
-    <nav class="navbar navbar-light ff fs-18 bold">
-        <span class="navbar-brand mb-0 ">eDOKITA</span>
+    <nav class="navbar navbar-light ff fs-18 bold bg-primary">
+        <span class="navbar-brand mb-0">eDOKITA</span>
         <ul class="nav justify-content-end ">
             <li class="nav-item ">
-              <a class="nav-link text-primary" href="#">Home</a>
+                <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">About us</a>
+                <a class="nav-link text-dark" href="#">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Resources</a>
+                <a class="nav-link text-dark" href="#">Resources</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Contact us</a>
+                <a class="nav-link text-dark" href="#">Contact us</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-dark" href="#">FAQs</a>
-              </li>
-          </ul>
+            </li>
+        </ul>
     </nav>
-    
+    <div class="row py-5 m-0">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <span routerLink='/patient/register'
+                class="badge badge-pill badge-primary px-4 py-2 mx-1 fs-18">Patient</span>
+            <span routerLink='/pharmacy/register'
+                class="badge badge-pill badge-secondary px-4 py-2 mx-1 fs-18">Pharmacy</span>
+            <span routerLink='/hospital/register'
+                class="badge badge-pill badge-warning px-4 py-2 mx-1 fs-18">Hospital</span>
+            <span routerLink='/lab/register' class="badge badge-pill badge-danger px-4 py-2 mx-1 fs-18">Lab</span>
+        </div>
+        <div class="col-sm-4"></div>
+
+    </div>
+
     <div class="row m-0">
         <div class="col-md-6">
             <img src="assets/img/doc.jpg" alt="">
         </div>
         <div class="col-md-6 ff fs-21">
-            <h4 class="text-center ff-nunito fs-26 bold">Doctor's Registration</h4>
+            <h4 class="text-center ff-nunito fs-26 bold mt-2">Doctor's Registration</h4>
             <p class="text-center text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
                 eiusmod tempor incididunt ut </p>
-            <div class="col-12">
-                <form>
-    
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="Full Name">
+            <form [formGroup]="signupForm" (submit)="onSignup()">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" formControlName="firstName" class="form-control" 
+                                placeholder="FirstName" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }">
                         </div>
-                        <div class="form-group col-md-6">
-                            <select class="form-control">
-                                <option>Speciality</option>
+                        <div class="form-group">
+                            <input type="text" formControlName="lastName" class="form-control" 
+                                placeholder="Last Name" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" formControlName="email" class="form-control" 
+                                placeholder="Email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                        </div>
+                        <div class="form-group">
+                            <select formControlName="gender" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.gender.errors }">
+                                <option [ngValue]="null">Gender</option>
+                                <option *ngFor="let mode of modes" [value]="mode.value">{{mode.display}}</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="Last Name">
+                        <div class="form-group">
+                            <input type="text" formControlName="phone" class="form-control" 
+                                placeholder="Phone" [ngClass]="{ 'is-invalid': submitted && f.phone.errors }">
                         </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="Affiliated Hospital">
+                        <div class="form-group">
+                            <input type="text" formControlName="address" class="form-control" id="inputPassword4"
+                                placeholder="Address" [ngClass]="{ 'is-invalid': submitted && f.address.errors }">
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email
-                            ">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="License ID Number">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <select class="form-control">
-                                <option>Gender</option>
+                        <div class="form-group">
+                            <select formControlName="country" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.country.errors }">
+                                <option [ngValue]="null">Country</option>
+                                <option>Nigeria</option>
                             </select>
                         </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="License Issue Date
-                            ">
+                        <div class="form-group">
+                            <select formControlName="state" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.state.errors }"
+                            (change)="onState($event)">
+                                <option [ngValue]="null">State</option>
+                                <option *ngFor="let state of states" [value] = "state.state">{{state.state}}</option>
+                            </select>
                         </div>
+                        <div class="form-group">
+                            <select *ngIf="!lgas" class="form-control">
+                                <option [ngValue]="null">City</option>
+                            </select>
+                            <select *ngIf="lgas" formControlName="city" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.city.errors }">
+                                <option [ngValue]="null" disabled>City</option>
+                                <option *ngFor="let lga of lgas.lgas" [value]="lga">{{lga}}</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" formControlName="why" 
+                                placeholder="Why should you be a provider at eDockita (150words)" [ngClass]="{ 'is-invalid': submitted && f.why.errors }"></textarea>
+                        </div>
+                        
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="Phone">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <select formControlName="speciality" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.speciality.errors }">
+                                <option [ngValue]="null">Speciality</option>
+                                <option *ngFor="let spec of specs" [value]="spec.value">{{spec.display}}</option>
+                            </select>
                         </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="License Expiry Date">
+                        <div class="form-group">
+                            <input type="text" formControlName="aHospital" class="form-control" 
+                                placeholder="Affiliated Hospital" [ngClass]="{ 'is-invalid': submitted && f.aHospital.errors }">
                         </div>
-                    </div>
-                   
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputPassword4" placeholder="Address">
+                        <div class="form-group">
+                            <input type="text" formControlName="licenseId" class="form-control" 
+                                placeholder="License ID Number" [ngClass]="{ 'is-invalid': submitted && f.licenseId.errors }">
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group">
+                            <input matInput formControlName="licenseIssue" class="form-control" 
+                                placeholder="License Issue Date"[ngClass]="{ 'is-invalid': submitted && f.licenseIssue.errors }">    
+                        </div>
+                        <div class="form-group">
+                            <input type="text" formControlName="licenseExpiry" class="form-control" 
+                                placeholder="License Expiry Date"[ngClass]="{ 'is-invalid': submitted && f.licenseExpiry.errors }">
+                        </div>
+                        <div class="form-group">
                             <label for="">Upload a scanned copy
                                 of your license (120kb)</label>
-                                <button class="btn btn-secondary ml-2" (click)="filePicker1.click()"> Choose a File</button>
-                                <input type="file" #filePicker1 style="display: none;">
-                            <label for="" class="text-danger mt-1">All licensed medical specialist are
+                            <button type="button" class="btn btn-secondary ml-2" (click)="filePicker1.click()"> Choose a
+                                File</button>
+                            <input type="file" #filePicker1 (change)="onImagePicked($event)"
+                                style="display: none;">
+                            <label *ngIf="!imagePreview" for="" class="text-danger mt-1">All licensed medical specialist
+                                are
                                 required to provide the above
                                 information</label>
+                            <div class="imagepicked"
+                                *ngIf="imagePreview !=='' && imagePreview && signupForm.get('image').valid">
+                                <img [src]="imagePreview" [alt]="signupForm.value.title">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" formControlName="username" class="form-control" 
+                                placeholder="Username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" formControlName="password" class="form-control" 
+                                placeholder="Password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="password" formControlName="cPassword" class="form-control" id="inputPassword4"
+                                placeholder="Confirm Password" [ngClass]="{ 'is-invalid': submitted && f.cPassword.errors }">
+                                <div *ngIf="submitted && f.cPassword.errors" class="invalid-feedback">
+                                    <div *ngIf="f.cPassword.errors.required">Confirm Password is required</div>
+                                    <div *ngIf="f.cPassword.errors.mustMatch">Passwords must match</div>
+                                  </div>
                         </div>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <select class="form-control">
-                                <option>Country</option>
-                            </select>
-                        </div>
+
+                </div>
+                <p class="text-center text-secondary">Accept <span style="color: royalblue;">terms and conditions</span>
+                </p>
+                <div class="row pb-5">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-5">
+                        <button type="submit" class="btn btn-primary">Register</button>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <select class="form-control">
-                                <option>City
-                                </option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <textarea class="form-control" id="inputEmail4" placeholder="Why should you
-                            be a provider at
-                            eDockita (150
-                            words)"></textarea>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="Username
-                            ">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="Password">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputPassword4" placeholder="Confirm Password">
-                        </div>
-                    </div>
-                    <p class="text-center text-secondary">Accept  <span style="color: royalblue;">terms and conditions</span> </p>
-                    <div class="row">  
-                        <div class="col-md-5"></div>
-                        <div class="col-md-5">
-                            <button type="submit" class="btn btn-primary">Register</button>
-                        </div>
-                    </div>
-                    
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </div>
 
 </div>
-
