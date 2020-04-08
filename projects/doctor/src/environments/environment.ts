@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseApi:'http://backend.edokita.com/api/v1/'
+  baseApi: 'http://backend.webservices.pro/api/v1/'
 };
 
 /*

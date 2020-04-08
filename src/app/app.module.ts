@@ -42,7 +42,7 @@ import { environment } from '../environments/environment'
     FormsModule,
     HttpClientModule
   ],
-  providers: [{provide: 'apiUrl', useValue: environment.API_URL }],
+  providers: [{provide: 'apiUrl', useValue: environment.baseApi }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
