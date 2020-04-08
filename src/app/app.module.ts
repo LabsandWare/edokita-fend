@@ -17,6 +17,9 @@ import { FlatpickrModule } from 'angularx-flatpickr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './auth/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
+import {  } from '../app/';
+
+import { environment } from '../environments/environment'
 
 
 @NgModule({
@@ -40,7 +43,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{provide: 'apiUrl', useValue: environment.API_URL }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
