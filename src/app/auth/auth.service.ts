@@ -3,6 +3,7 @@ import { Subject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { AuthData } from './auth.model'
+import { environment } from '../../environments/environment'
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +14,7 @@ export class AuthService {
   private token: string;
   private tokenTimer: any;
   private authStatusListener = new Subject<boolean>();
+  baseApi = environment.baseApi;
   constructor(private http: HttpClient, private router: Router) { }
   getToken() {
     return this.token;
@@ -26,9 +28,9 @@ export class AuthService {
   getAuthStatusListener() {
     return this.authStatusListener.asObservable();
   }
-  login(Username: string, Password: string) {
-    const loginData: AuthData = { username: Username, password: Password };
-    this.http.post('', loginData)
+  login(Email: string, Password: string) {
+    const loginData: AuthData = { email: Email, password: Password };
+    this.http.post(this.baseApi+'login', loginData)
       .subscribe((response:any) => {
         // console.log(response);<{ token: string, expiresIn: number, userId: string }>
         const token = response.token;

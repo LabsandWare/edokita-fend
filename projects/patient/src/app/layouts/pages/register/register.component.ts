@@ -35,8 +35,8 @@ export class RegisterComponent implements OnInit {
       state: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
       city: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
       username: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
-      password: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
-      cPassword: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
+      password: new FormControl(null, {validators: [Validators.required, Validators.minLength(6)]}),
+      cPassword: new FormControl(null, {validators: [Validators.required, Validators.minLength(6)]}),
     },{validator: MustMatch('password','cPassword')})
   }
   onImagePicked(event: Event) {

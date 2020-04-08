@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
     constructor(public authService: AuthService) {}
     ngOnInit() {
         this.form = new FormGroup({
-            Username: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
+            Email: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
             Password: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]})
         });
     }
@@ -22,6 +22,6 @@ export class LoginComponent implements OnInit {
         if (this.form.invalid) {
             return;
         }
-        this.authService.login(this.form.value.Username, this.form.value.Password);
+        this.authService.login(this.form.value.Email, this.form.value.Password);
     }
 }

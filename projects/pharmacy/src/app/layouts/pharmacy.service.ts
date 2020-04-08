@@ -26,7 +26,7 @@ export class PharmacyService {
       signupData.append('password', Password)
       signupData.append('password_confirmation', cPassWord)
       signupData.append('photo', Image)
-    return this.http.post(this.baseApi+'signup/doctor', signupData)
+    return this.http.post(this.baseApi+'signup/pharmacy', signupData)
   }
 }
 

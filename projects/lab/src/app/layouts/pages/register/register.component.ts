@@ -37,21 +37,15 @@ export class RegisterComponent implements OnInit {
       firstName: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
       lastName: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
       email: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
-      gender: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
       phone: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
       address: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
       country: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
       state: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
       city: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
-      speciality: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
-      aHospital: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
-      licenseId: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
-      licenseIssue: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
-      licenseExpiry: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
       why: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
       username: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
-      password: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
-      cPassword: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
+      password: new FormControl(null, {validators: [Validators.required, Validators.minLength(6)]}),
+      cPassword: new FormControl(null, {validators: [Validators.required, Validators.minLength(6)]}),
       image: new FormControl(null, {validators: [Validators.required ],
         asyncValidators: [mimeType]}),
     },{validator: MustMatch('password','cPassword')})
@@ -77,15 +71,14 @@ get f() { return this.signupForm.controls; }
         }, 500);
       return;
   }
-  this.labService.signup(this.signupForm.value.firstName, this.signupForm.value.lastName, this.signupForm.value.email, this.signupForm.value.gender, this.signupForm.value.phone,
-    this.signupForm.value.address, this.signupForm.value.country,this.signupForm.value.city, this.signupForm.value.speciality,
-    this.signupForm.value.aHospital,this.signupForm.value.licenseId,this.signupForm.value.licenseIssue,this.signupForm.value.licenseExpiry,this.signupForm.value.state,
+  this.labService.signup(this.signupForm.value.firstName, this.signupForm.value.lastName, this.signupForm.value.email, this.signupForm.value.phone,
+    this.signupForm.value.address, this.signupForm.value.country,this.signupForm.value.city,this.signupForm.value.state,
     this.signupForm.value.image,this.signupForm.value.why,this.signupForm.value.username,this.signupForm.value.password, this.signupForm.value.cPassword).subscribe((res: any)=>{
       console.log(res)
       if (res.status === 'Success') {
-        this.router.navigate(['/doctor/dashboard'])
+        this.router.navigate(['/'])
        }else{
-         this.router.navigate(['/'])
+         this.router.navigate(['/lab/register'])
       }
     })
   }

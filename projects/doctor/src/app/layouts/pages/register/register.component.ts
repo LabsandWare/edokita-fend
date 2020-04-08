@@ -51,8 +51,8 @@ export class RegisterComponent implements OnInit {
       licenseExpiry: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
       why: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
       username: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
-      password: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
-      cPassword: new FormControl(null, {validators: [Validators.required, Validators.minLength(3)]}),
+      password: new FormControl(null, {validators: [Validators.required, Validators.minLength(6)]}),
+      cPassword: new FormControl(null, {validators: [Validators.required, Validators.minLength(6)]}),
       image: new FormControl(null, {validators: [Validators.required ],
         asyncValidators: [mimeType]}),
     },{validator: MustMatch('password','cPassword')})

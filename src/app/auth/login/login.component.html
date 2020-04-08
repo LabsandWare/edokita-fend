@@ -15,8 +15,8 @@
             </div>
 
 
-            <input formControlName="Username" [ngClass]="{'is-invalid': submitted && f.Username.errors }" type="text"
-                placeholder="Email / Phone Number" class="form-control" name="login" value="" required autofocus
+            <input formControlName="Email" [ngClass]="{'is-invalid': submitted && f.Email.errors }" type="text"
+                placeholder="Email" class="form-control" name="login" value="" required autofocus
                 style="color:#b1bac8;font-size: 14px;">
 
 
@@ -32,6 +32,12 @@
                     <a routerLink="/forgot-password">
                         Forgot Password?
                     </a>
+                    <p>
+                        Need an account? <a routerLink="/patient/register">
+                            Sign up
+                        </a>
+
+                    </p>
                 </div>
             </div>
 
